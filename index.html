@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="line()">
+    <!-- ---------------------
+     Header section
+     -------------------------- -->
+
+    <section class="header">
+      <!-- Navbar start -->
+      <nav class="navbar">
+        <!-- logo of the navbar start -->
+        <div style="cursor: pointer;" class="logo-images">
+          <img src="./images/logo-bookmark.svg" />
+          <img
+            onclick="show()"
+            class="hamburger"
+            src="./images/icon-hamburger.svg"
+          />
+        </div>
+        <!-- logo of the navbar End -->
+
+        <div class="nav-list">
+          <!-- option of the navbar start -->
+          <ul >
+            <li class="close-images">
+              <img src="./images/logo-bookmark white.svg" />
+              <img onclick="hide()" src="./images/icon-close.svg" />
+            </li>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+            <li><button class="login">LOGIN</button></li>
+            <li id="last-images">
+              <img src="./images/icon-facebook.svg" />
+              <img src="./images/icon-twitter.svg" />
+            </li>
+          </ul>
+          <!-- option of the navbar end -->
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!--********************* 
+          Hero Section is start
+      ************************* -->
+      <div class="hero">
+        <!-- left section start -->
+        <div class="hero-left">
+          <ul>
+            <li><h1>A Simple Bookmark Manager</h1></li>
+            <li>
+              <p>
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+            </li>
+            <li>
+              <button id="chrome-btn">Get it on Chrome</button>
+              <button id="firefox-btn">Get it on Firefox</button>
+            </li>
+          </ul>
+        </div>
+        <!-- left section End -->
+
+        <div class="hero-right">
+          <div class="blue-whale-right">
+            <img
+              id="blue-whale-img"
+              src="./images/illustration-hero.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section is End -->
+    </section>
+
+    <!-- ---------------------
+     Header section End
+     -------------------------- -->
+
+    <!-- --------------------------
+      Features Section start
+    -------------------------------- -->
+
+    <section class="features">
+      <!-- feature total start -->
+      <div class="feature-total">
+        <!-- features paragraph start-->
+        <div class="features-para">
+          <h1>Features</h1>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <!-- features paragraph End-->
+
+        <!-- feature heading start -->
+        <div class="heading">
+          <span>Simple Bookmarking</span>
+          <span>Speedy Searching</span>
+          <span>Easy Sharing</span>
+        </div>
+        <!-- feature heading End -->
+      </div>
+      <!-- feature total End -->
+
+      <!-- feature option start -->
+      <div class="feature-option">
+        <!--------------***********--------------->
+        <!-- !real Option 1 start now   -->
+        <!--------------***********--------------->
+
+        <div class="opt1 option">
+          <!-- option-left start -->
+          <div class="option-left">
+            <div class="blue-whale-left">
+              <img
+                id="option-blue-whale-img"
+                class="option-img-1"
+                src="./images/illustration-features-tab-1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- option-left start -->
+
+          <!-- option-right start -->
+          <div class="option-right">
+            <ul>
+              <li><h1>Bookmark in one click</h1></li>
+              <li>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+              </li>
+              <li>
+                <button id="more-info">More Info</button>
+              </li>
+            </ul>
+          </div>
+          <!-- option-right End -->
+        </div>
+        <!-- real option is End Here -->
+
+        <!--------------***********--------------->
+        <!-- !real Option 2 start now   -->
+        <!--------------***********--------------->
+        <div class="opt2 option">
+          <!-- option-left start -->
+          <div class="option-left">
+            <div class="blue-whale-left">
+              <img
+                id="option-blue-whale-img"
+                src="./images/illustration-features-tab-2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- option-left start -->
+
+          <!-- option-right start -->
+          <div class="option-right">
+            <ul>
+              <li><h1>Intelligent search</h1></li>
+              <li>
+                <p>
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+              </li>
+              <li>
+                <button id="more-info">More Info</button>
+              </li>
+            </ul>
+          </div>
+          <!-- option-right End -->
+        </div>
+        <!-- real option is End Here -->
+
+        <!--------------***********--------------->
+        <!-- !real Option 3 start now   -->
+        <!--------------***********--------------->
+        <div class="opt3 option">
+          <!-- option-left start -->
+          <div class="option-left">
+            <div class="blue-whale-left">
+              <img
+                id="option-blue-whale-img"
+                src="./images/illustration-features-tab-3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- option-left start -->
+
+          <!-- option-right start -->
+          <div class="option-right">
+            <ul>
+              <li><h1>Share your bookmarks</h1></li>
+              <li>
+                <p>
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+              </li>
+              <li>
+                <button id="more-info">More Info</button>
+              </li>
+            </ul>
+          </div>
+          <!-- option-right End -->
+        </div>
+        <!-- real option is End Here -->
+      </div>
+      <!-- feature option End -->
+    </section>
+
+    <!-- --------------------------
+     Features Section End
+   -------------------------------- -->
+
+    <section class="download">
+      <!-- download para start -->
+      <div class="download-para">
+        <h1>Download the extension</h1>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <!-- download para End -->
+
+      <!-- tag section is start -->
+      <div class="tags">
+        <!-- chrome tag start -->
+        <div class="chrome-tag tag">
+          <img src="./images/logo-chrome.svg" />
+          <h2>Add to Chrome</h2>
+          <p>Minimum version 62</p>
+          <img src="./images/bg-dots.svg" alt="" />
+          <button class="install-extension">Add & Install Extension</button>
+        </div>
+        <!-- chrome tag End -->
+
+        <!-- firefox tag start -->
+        <div class="firefox-tag tag">
+          <img src="./images/logo-firefox.svg" />
+          <h2>Add to Firefox</h2>
+          <p>Minimum version 55</p>
+          <img src="./images/bg-dots.svg" alt="" />
+          <button class="install-extension">Add & Install Extension</button>
+        </div>
+        <!-- chrome tag End -->
+
+        <!-- opera tag start -->
+        <div class="opera-tag tag">
+          <img src="./images/logo-opera.svg" />
+          <h2>Add to Opera</h2>
+          <p>Minimum version 46</p>
+          <img src="./images/bg-dots.svg" alt="" />
+          <button class="install-extension">Add & Install Extension</button>
+        </div>
+        <!-- chrome tag End -->
+      </div>
+      <!-- tag section is End -->
+    </section>
+
+    <!-- -----------------------------------------------------
+     Asked Question Section
+     --------------------------------------------------------- -->
+
+    <section class="asked-question">
+      <!-- question para start -->
+      <div class="question-para">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answer hiddened please feel free to email us.
+        </p>
+      </div>
+      <!-- question para End -->
+
+      <!-- original question is started now -->
+      <div class="question-box">
+        <!-- question 1 is start -->
+        <div class="questions question-1">
+          <div class="question">
+            <p>What is Bookmark?</p>
+            <img class="arrow-img" src="./images/icon-arrow.svg" />
+            <img
+              class="arrow-up-img hidden rotate"
+              src="./images/icon-arrow up.svg"
+              alt=""
+            />
+          </div>
+          <div class="answer hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </div>
+        </div>
+        <!-- question 1 is end -->
+
+        <!-- question 2 is start -->
+        <div class="questions question-2">
+          <div class="question">
+            <p>How can I request a new browser?</p>
+            <img class="arrow-img" src="./images/icon-arrow.svg" />
+            <img
+              class="arrow-up-img hidden rotate"
+              src="./images/icon-arrow up.svg"
+              alt=""
+            />
+          </div>
+          <div class="answer hidden">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </div>
+        </div>
+        <!-- question 2 is end -->
+
+        <!-- question 3 is start -->
+        <div class="questions question-3">
+          <div class="question">
+            <p>Is there a mobile app?</p>
+            <img class="arrow-img" src="./images/icon-arrow.svg" />
+            <img
+              class="arrow-up-img hidden rotate"
+              src="./images/icon-arrow up.svg"
+              alt=""
+            />
+          </div>
+          <div class="answer hidden">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </div>
+        </div>
+        <!-- question 3 is end -->
+
+        <!-- question 4 is start -->
+        <div class="questions question-4">
+          <div class="question">
+            <p>What about other Chromium browsers?</p>
+            <img class="arrow-img" src="./images/icon-arrow.svg" />
+            <img
+              class="arrow-up-img hidden rotate"
+              src="./images/icon-arrow up.svg"
+              alt=""
+            />
+          </div>
+          <div class="answer hidden">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit.
+          </div>
+        </div>
+        <!-- question 4 is end -->
+      </div>
+      <!-- original question is Ended now -->
+      <button id="more-info-2">More Info</button>
+    </section>
+
+    <!-- -----------------------------------------
+     Hero End Section Start
+     --------------------------------------------- -->
+
+    <section class="hero-end">
+      <div class="hero-end-total">
+        <p>35,000+ already joined</p>
+        <h1>Stay up-to-date with what we’re doing</h1>
+        <div class="input-box">
+          <div class="red-box">
+            <input
+            type="email"
+            placeholder="Enter your email address"
+            name=""
+            id="input"
+          />
+          <p>Whoops, make sure it's an email</p>
+          </div>
+          <input id="login" class="login" onclick="submit()" type="submit" value="Contact us" />
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------
+     Hero End Section End
+     --------------------------------------------- -->
+
+    <section class="footer">
+      <div class="footer-inner">
+        <!-- left footer is start -->
+        <div class="left-footer">
+          <ul>
+            <li>
+              <img
+                id="footer-logo"
+                src="./images/logo-bookmark white footer.svg"
+                alt=""
+              />
+            </li>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <!-- left footer is End -->
+
+        <!-- right footer is start -->
+        <div class="right-footer">
+          <img id="facebook-white" src="./images/icon-facebook.svg" alt="" />
+          <img id="twitter-white" src="./images/icon-twitter.svg" alt="" />
+        </div>
+        <!-- right footer is End -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
